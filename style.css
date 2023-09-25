@@ -1,0 +1,92 @@
+body{
+  padding: 0 0 ;
+  margin: 0 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 600px;
+  height: 600px;
+ 
+  margin: auto auto;
+  
+}
+.clock-container::before{
+ 
+   content: "";
+   /* display: block; */
+    position: absolute;
+       width: 600px;
+    height: 580px;
+        border-radius: 650px;
+    background:url("./Analog-Clock-With-JavaScript-And-SCSS.png")no-repeat center center/contain;
+    /* background-size: auto; */
+
+ 
+    z-index: 100;
+    opacity: 0.89;
+     
+
+}
+.clock-container{
+ 
+/* background-color: red; */
+height:auto;
+  position:relative;
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  /* margin: auto ; */
+}
+#hour,#min, #sec{
+  position: absolute;
+  background-color: rgb(61, 65, 57);
+  border-radius: 10px ;
+
+  transform-origin: bottom;
+  border-radius: 10px 0 0 0;
+  
+}
+#hour{
+width: 2%;
+height: 38%;
+  top: 11%;
+    left: 49%;
+z-index: 10000;
+     background-color:orange;
+     opacity: 0.8;
+/* display: none;  */
+/* transform: rotate(90deg); */
+}
+#min{
+width: 2%;
+height: 30%; 
+z-index: 10000;
+    top: 20%;
+    left: 49%;
+    background-color: chartreuse;
+    opacity: 0.5;
+     /* transform: rotate(285deg); */
+/* display: none; */
+}
+#sec{
+ width: 2%;
+height: 27%;
+z-index: 10000;
+    top: 22%;
+    left: 49%; 
+    background-color: red;      
+    opacity: 0.6;
+    /* display: none; */
+ 
+}
+.center{
+  background-color:  black;
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+    z-index: 10020;
+        top: 281px;
+    left: 284px;
+}
+
